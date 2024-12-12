@@ -11,7 +11,7 @@ import java.util.Map;
 
 public class JwtTokenUtil {
 
-    private static final String SECRET_KEY = "yourSecretKey"; // Replace with a stronger key
+    private static final String SECRET_KEY = "-j]#)z4.+A_xbKQQC@h2FxCGzattHr";
 
     public static String generateToken(String username, List<Role> role) {
         return Jwts.builder()
@@ -37,7 +37,6 @@ public class JwtTokenUtil {
                 .parseClaimsJws(token)
                 .getBody();
 
-        // Extract roles from the token's claims
         List roles = claims.get("role", List.class);
         return roles;
     }
