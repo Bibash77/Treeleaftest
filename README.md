@@ -15,6 +15,8 @@ This repository contains the solution to the Treeleaf Job Qualification Task, im
   - CRUD operations for blog posts and comments.
   - MySQL database integration.
 
+    - Default username/pw for admin user is "admin"
+    - find postman collection under logical-task module >> resources >> json
 - **Module 3: problem-solving-task**  
   Converts customer profiles from a 4-byte integer ID to a 128-bit UUID.
 
