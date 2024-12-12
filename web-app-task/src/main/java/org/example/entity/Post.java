@@ -6,6 +6,8 @@ import javax.persistence.*;
 import java.util.HashSet;
 import java.util.Set;
 
+// we can use spring audit to auto set fields such as created date, created by etc
+// can be enhanced with soft delete
 @Entity
 @Table(name = "blog_posts")
 @Getter

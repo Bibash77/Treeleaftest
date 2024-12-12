@@ -8,7 +8,13 @@
         <artifactId>treeleaftestbibash</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
-
+<dependencies>
+    <dependency>
+        <groupId>org.projectlombok</groupId>
+        <artifactId>lombok</artifactId>
+        <version>1.18.34</version>
+    </dependency>
+</dependencies>
     <artifactId>problem-solving-task</artifactId>
 
     <properties>

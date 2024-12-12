@@ -4,6 +4,9 @@ import lombok.*;
 
 import javax.persistence.*;
 
+// we can use spring audit to auto set fields such as created date, created by etc
+// can be enhanced with soft delete
+
 @Entity
 @Getter
 @Setter
