@@ -31,8 +31,8 @@ public class CommentService {
         return new CommentResponseDTO(
             savedComment.getId(),
             savedComment.getContent(),
-            savedComment.getUser().getId(),
-            savedComment.getPost().getId()
+                comment.getUser().getUsername(),
+                comment.getPost().getContent()
         );
     }
 
@@ -42,8 +42,8 @@ public class CommentService {
             .map(comment -> new CommentResponseDTO(
                 comment.getId(),
                 comment.getContent(),
-                comment.getUser().getId(),
-                comment.getPost().getId()
+                comment.getUser().getUsername(),
+                comment.getPost().getContent()
             ))
             .collect(Collectors.toList());
     }
@@ -54,8 +54,8 @@ public class CommentService {
             .map(comment -> new CommentResponseDTO(
                 comment.getId(),
                 comment.getContent(),
-                comment.getUser().getId(),
-                comment.getPost().getId()
+                    comment.getUser().getUsername(),
+                    comment.getPost().getContent()
             ));
     }
 

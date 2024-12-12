@@ -47,17 +47,17 @@ public class AuthController extends BaseController {
     @PreAuthorize("hasRole('ADMIN')")
     @GetMapping("/all-users")
     public ResponseEntity<GlobalAPIResponse> getAllUsers() {
-        return ResponseEntity.ok(successResponse("Users fetched succesfully", userService.getAllUsers()));
+        return ResponseEntity.ok(successResponse("Users fetched successfully", userService.getAllUsers()));
     }
 
     @PostMapping("/login")
     public ResponseEntity<GlobalAPIResponse> login(@RequestParam String username, @RequestParam String password) {
         User user = userService.findByUserName(username);
-
-
+        //token can be saved to db or local memory to improve security
+        // use password encoder later
         if (user != null && user.getPassword().equals(password)) {  // Simplified password check
             // Generate and return JWT token
-            return ResponseEntity.ok(successResponse("Token Fetched Successfully", JwtTokenUtil.generateToken(username, List.of(user.getRole()))));
+            return ResponseEntity.ok(successResponse("User Logged In Successfully", JwtTokenUtil.generateToken(username, List.of(user.getRole()))));
 
         }
 
