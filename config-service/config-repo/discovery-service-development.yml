@@ -1,0 +1,27 @@
+server:
+  port: 8091
+spring:
+  application:
+    name: discovery-service
+
+# - Disables registration of this service instance with Eureka.
+# - Disables fetching the registry information from Eureka.
+# - Sets the URL of the Eureka server (`defaultZone`) to http://localhost:8091/eureka,
+#   where this client looks up service registration information.
+eureka:
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    service-url:
+      defaultZone: http://localhost:8091/eureka
+
+# - Hystrix timeout configuration: Sets maximum wait time (in ms) for commands
+# - Enhances application resilience by defining a threshold for command execution,
+#   ensuring timely fallback or error handling in case of service unavailability.
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 100000
