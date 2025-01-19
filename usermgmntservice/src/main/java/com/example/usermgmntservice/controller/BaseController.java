@@ -1,10 +1,11 @@
 package com.example.usermgmntservice.controller;
 
-import org.example.usermanagementservice.dto.GlobalAPIResponse;
+
+import com.example.usermgmntservice.dto.GlobalAPIResponse;
 
 /**
  * @author Bibash Bogati
- * @created 2024-12-12
+ * @created 2024-12-18
  */
 public class BaseController {
 

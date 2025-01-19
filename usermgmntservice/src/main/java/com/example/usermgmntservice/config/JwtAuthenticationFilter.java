@@ -1,7 +1,6 @@
 package com.example.usermgmntservice.config;
 
 import jakarta.servlet.http.HttpServletRequest;
-import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.Authentication;
@@ -14,12 +13,6 @@ import java.util.stream.Collectors;
 
 public class JwtAuthenticationFilter implements Filter {
 
-    private final AuthenticationManager authenticationManager;
-
-    public JwtAuthenticationFilter(AuthenticationManager authenticationManager) {
-        this.authenticationManager = authenticationManager;
-    }
-
     @Override
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain)
             throws IOException, ServletException {
@@ -29,10 +22,10 @@ public class JwtAuthenticationFilter implements Filter {
         String token = httpRequest.getHeader("Authorization");
         if (token != null && token.startsWith("Bearer ")) {
             token = token.substring(7); // Remove "Bearer " prefix
-            String username = JwtTokenUtil.extractUsername(token);
-            List<String> roles = JwtTokenUtil.extractRoles(token);
+            String username = JwtTokenUtilTest.extractUsername(token);
+            List<String> roles = JwtTokenUtilTest.extractRoles(token);
 
-            if (username != null && JwtTokenUtil.validateToken(token, username)) {
+            if (username != null && JwtTokenUtilTest.validateToken(token, username)) {
                 // Create an authentication object and set it in the security context
                 Authentication auth = new UsernamePasswordAuthenticationToken(username, null,roles.stream().map(SimpleGrantedAuthority::new).collect(Collectors.toList()));
                 SecurityContextHolder.getContext().setAuthentication(auth);

@@ -1,9 +1,6 @@
 package com.example.usermgmntservice.entity;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import jakarta.persistence.*;
 
@@ -13,6 +10,7 @@ import jakarta.persistence.*;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
+@Builder
 public class Teacher {
 
     /** note for reviewer:  teacher won't have huge number of values
@@ -32,7 +30,7 @@ public class Teacher {
     private String subject;
 
     @OneToOne
-    @JoinColumn(name = "user_id", referencedColumnName = "id")
+    @JoinColumn(name = "user_id", referencedColumnName = "id", foreignKey = @ForeignKey(name = "fk_teacher_user"))
     private User user;
 
     // Getters, setters, and constructors

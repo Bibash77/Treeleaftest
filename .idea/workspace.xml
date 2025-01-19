@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="43c16929-75e0-405d-bfff-8bcf5be852f3" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-service/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-service/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-service/config-repo/application-development.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-service/config-repo/discovery-service-development.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-service/config-repo/gateway-service-development.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-service/config-repo/notification-service-development.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-service/config-repo/usermgmntservice-development.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-service/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-service/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-service/src/main/java/com/example/configservice/ConfigServiceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-service/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-service/src/test/java/com/example/configservice/ConfigServiceApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/discovery-service/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/discovery-service/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/discovery-service/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/discovery-service/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/discovery-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/discovery-service/src/main/java/com/example/discoveryservice/DiscoveryServiceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/discovery-service/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/discovery-service/src/test/java/com/example/discoveryservice/DiscoveryServiceApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-service/src/main/java/org/example/KafkaConsumerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-service/src/main/java/org/example/Notification.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-service/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/usermgmntservice/.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/usermgmntservice/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/usermgmntservice/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/usermgmntservice/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/usermgmntservice/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/usermgmntservice/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/usermgmntservice/src/main/java/com/example/usermgmntservice/UsermgmntserviceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/usermgmntservice/src/main/java/com/example/usermgmntservice/config/CorsConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/usermgmntservice/src/main/java/com/example/usermgmntservice/config/KafkaConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/usermgmntservice/src/main/java/com/example/usermgmntservice/config/security/v2/JwtTokenUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/usermgmntservice/src/main/java/com/example/usermgmntservice/config/security/v2/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/usermgmntservice/src/main/java/com/example/usermgmntservice/constants/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/usermgmntservice/src/main/java/com/example/usermgmntservice/controller/StudentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/usermgmntservice/src/main/java/com/example/usermgmntservice/controller/TeacherController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/usermgmntservice/src/main/java/com/example/usermgmntservice/dao/StudentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/usermgmntservice/src/main/java/com/example/usermgmntservice/dao/TeacherRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/usermgmntservice/src/main/java/com/example/usermgmntservice/dto/Notification.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/usermgmntservice/src/main/java/com/example/usermgmntservice/dto/StudentRegisterDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/usermgmntservice/src/main/java/com/example/usermgmntservice/dto/StudentRequestDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/usermgmntservice/src/main/java/com/example/usermgmntservice/dto/TeacherRegisterDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/usermgmntservice/src/main/java/com/example/usermgmntservice/dto/UserRegisterRequestDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/usermgmntservice/src/main/java/com/example/usermgmntservice/entity/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/usermgmntservice/src/main/java/com/example/usermgmntservice/entity/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/usermgmntservice/src/main/java/com/example/usermgmntservice/entity/Teacher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/usermgmntservice/src/main/java/com/example/usermgmntservice/producer/KafkaProducerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/usermgmntservice/src/main/java/com/example/usermgmntservice/producer/KafkaTopicConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/usermgmntservice/src/main/java/com/example/usermgmntservice/service/StudentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/usermgmntservice/src/main/java/com/example/usermgmntservice/service/TeacherService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/usermgmntservice/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/usermgmntservice/src/test/java/com/example/usermgmntservice/UsermgmntserviceApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jpa.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logical-task/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/notification-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logical-task/src/main/java/org/example/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logical-task/src/main/java/org/example/problem/arrayinversion/ArrayInversion.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logical-task/src/main/java/org/example/problem/equalsum/EqualSumProblem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/problem-solving-task/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/problem-solving-task/src/main/java/org/example/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/problem-solving-task/src/main/java/org/example/solution/CustomerProfile.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/problem-solving-task/src/main/java/org/example/solution/CustomerProfileUpdater.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-app-task/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-app-task/src/main/java/org/example/WebModuleApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-app-task/src/main/java/org/example/config/JwtAuthenticationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/usermgmntservice/src/main/java/com/example/usermgmntservice/config/JwtAuthenticationFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-app-task/src/main/java/org/example/config/JwtTokenUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/usermgmntservice/src/main/java/com/example/usermgmntservice/config/JwtTokenUtilTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-app-task/src/main/java/org/example/config/PasswordEncoderConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/usermgmntservice/src/main/java/com/example/usermgmntservice/config/PasswordEncoderConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-app-task/src/main/java/org/example/config/SecurityConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-app-task/src/main/java/org/example/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/usermgmntservice/src/main/java/com/example/usermgmntservice/controller/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-app-task/src/main/java/org/example/controller/BaseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/usermgmntservice/src/main/java/com/example/usermgmntservice/controller/BaseController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-app-task/src/main/java/org/example/controller/CommentController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-app-task/src/main/java/org/example/controller/PostController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-app-task/src/main/java/org/example/dao/CommentRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-app-task/src/main/java/org/example/dao/PostRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-app-task/src/main/java/org/example/dao/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/usermgmntservice/src/main/java/com/example/usermgmntservice/dao/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-app-task/src/main/java/org/example/dto/CommentRequestDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-app-task/src/main/java/org/example/dto/CommentResponseDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-app-task/src/main/java/org/example/dto/GlobalAPIResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/usermgmntservice/src/main/java/com/example/usermgmntservice/dto/GlobalAPIResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-app-task/src/main/java/org/example/dto/PostRequestDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-app-task/src/main/java/org/example/dto/ResponseDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/usermgmntservice/src/main/java/com/example/usermgmntservice/dto/ResponseDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-app-task/src/main/java/org/example/entity/Comment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-app-task/src/main/java/org/example/entity/Post.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-app-task/src/main/java/org/example/entity/Role.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-app-task/src/main/java/org/example/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/usermgmntservice/src/main/java/com/example/usermgmntservice/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-app-task/src/main/java/org/example/handler/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/usermgmntservice/src/main/java/com/example/usermgmntservice/handler/GlobalExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-app-task/src/main/java/org/example/initialize/AdminUserInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/usermgmntservice/src/main/java/com/example/usermgmntservice/initialize/AdminUserInitializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-app-task/src/main/java/org/example/service/CommentService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-app-task/src/main/java/org/example/service/PostService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-app-task/src/main/java/org/example/service/PostWithThumbnailService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-app-task/src/main/java/org/example/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/usermgmntservice/src/main/java/com/example/usermgmntservice/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-app-task/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-app-task/src/main/resources/json/tree leaf.postman_collection.json" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JpbToolWindowState">
+    <option name="isToolWindowVisible" value="false" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2rngBdqVIBZPtucHIIKw9HI7qvb" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "Spring Boot.ConfigServiceApplication.executor": "Run",
+    "Spring Boot.DiscoveryServiceApplication.executor": "Run",
+    "Spring Boot.UsermgmntserviceApplication.executor": "Debug",
+    "Spring Boot.notification-service.executor": "Run",
+    "Spring Boot.user-management-service.executor": "Run",
+    "git-widget-placeholder": "new-main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/bibash/Desktop/7thsem/schoolmanagement/usermgmntservice/src/main/java/com/example/usermgmntservice/controller",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0",
+    "run.configurations.included.in.services": "true",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
+    ]
+  }
+}]]></component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/usermgmntservice/src/main/java/com/example/usermgmntservice/controller" />
+      <recent name="$PROJECT_DIR$/config-service/config-repo" />
+      <recent name="$PROJECT_DIR$/usermgmntservice/src/main/java/com/example/usermgmntservice" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/user-management-service/src/main/java/org/example/usermanagementservice/config/security" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.example.usermgmntservice.config" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="KtorApplicationConfigurationType" />
+        <option value="MicronautRunConfigurationType" />
+        <option value="QuarkusRunConfigurationType" />
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+    <option name="hiddenConfigurations">
+      <map>
+        <entry key="SpringBootApplicationConfigurationType">
+          <value>
+            <set>
+              <option value="user-management-service" />
+            </set>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.notification-service">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="logical-task" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="logical-task" />
+      <option name="filePath" />
+      <method v="2" />
+    </configuration>
+    <configuration name="ConfigServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="config-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.configservice.ConfigServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DiscoveryServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="discovery-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.discoveryservice.DiscoveryServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UsermgmntserviceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="usermgmntservice" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.usermgmntservice.UsermgmntserviceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="notification-service" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="notification-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.Main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="user-management-service" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <option name="ACTIVE_PROFILES" value="development" />
+      <module name="user-management-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.usermanagementservice.UserManagementServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Spring Boot.UsermgmntserviceApplication" />
+      <item itemvalue="Spring Boot.user-management-service" />
+      <item itemvalue="Spring Boot.notification-service" />
+      <item itemvalue="Spring Boot.ConfigServiceApplication" />
+      <item itemvalue="Spring Boot.DiscoveryServiceApplication" />
+    </list>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-125ca727e0f0-intellij.indexing.shared.core-IU-243.23654.117" />
+        <option value="bundled-js-predefined-d6986cc7102b-822845ee3bb5-JavaScript-IU-243.23654.117" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="43c16929-75e0-405d-bfff-8bcf5be852f3" name="Changes" comment="" />
+      <created>1737259828445</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1737259828445</updated>
+      <workItem from="1737259829829" duration="3612000" />
+      <workItem from="1737263453032" duration="16115000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/usermgmntservice/src/main/java/com/example/usermgmntservice/controller/AuthController.java</url>
+          <line>50</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/usermgmntservice/src/main/java/com/example/usermgmntservice/config/JwtAuthenticationFilter.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/usermgmntservice/src/main/java/com/example/usermgmntservice/handler/GlobalExceptionHandler.java</url>
+          <line>14</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/usermgmntservice/src/main/java/com/example/usermgmntservice/handler/GlobalExceptionHandler.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/usermgmntservice/src/main/java/com/example/usermgmntservice/handler/GlobalExceptionHandler.java</url>
+          <line>13</line>
+          <properties class="com.example.usermgmntservice.handler.GlobalExceptionHandler" method="handleEntityNotFound">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

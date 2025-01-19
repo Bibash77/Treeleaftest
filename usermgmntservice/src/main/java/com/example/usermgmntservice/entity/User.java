@@ -8,7 +8,7 @@ import lombok.*;
 // can be enhanced with soft delete
 
 @Entity
-@Table(name = "user", uniqueConstraints = {@UniqueConstraint(name = "uk_user_username", columnNames = "username")})
+@Table(name = "users", uniqueConstraints = {@UniqueConstraint(name = "uk_user_username", columnNames = "username")})
 @Getter
 @Setter
 @AllArgsConstructor

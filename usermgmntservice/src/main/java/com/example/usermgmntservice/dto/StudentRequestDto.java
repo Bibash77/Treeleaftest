@@ -4,17 +4,16 @@ import lombok.Data;
 
 /**
  * @author Bibash Bogati
- * @created 2025-01-12
+ * @created 2025-01-18
  */
 @Data
-public class StudentRequestDto {
+public class StudentRequestDto extends UserRegisterRequestDto{
 
     private String name;
 
     private String email;
 
-    private String username;
+    private Integer classNo;
 
-    private String password;
 
 }

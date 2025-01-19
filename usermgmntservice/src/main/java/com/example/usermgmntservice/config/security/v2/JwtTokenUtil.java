@@ -62,23 +62,13 @@ public class JwtTokenUtil {
         return (username.equals(extractUsername(token)) && !isTokenExpired(token)); // Ensure username matches and token is not expired
     }
 
-    // Encode data into Base64
+    // Encode data into Base64 using Java's built-in Base64 class
     public static String encodeBase64(byte[] data) {
         return Base64.getEncoder().encodeToString(data); // Use Base64 encoder to encode byte array
     }
 
-    // Decode Base64 data
+    // Decode Base64 data using Java's built-in Base64 class
     public static byte[] decodeBase64(String data) {
         return Base64.getDecoder().decode(data); // Use Base64 decoder to decode Base64 string
-    }
-
-    // Alternative method to convert Date to Instant (in case needed for date formatting or other operations)
-    public static Date convertToDateFromInstant(java.time.Instant instant) {
-        return java.util.Date.from(instant); // Convert Instant to Date
-    }
-
-    // Example of how to use Instant for expiration handling
-    public static Date convertToDateFromInstant(long secondsFromNow) {
-        return java.util.Date.from(java.time.Instant.now().plusSeconds(secondsFromNow)); // Convert Instant from now + seconds
     }
 }

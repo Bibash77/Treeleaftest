@@ -1,16 +1,18 @@
 package com.example.usermgmntservice.controller;
 
 
-import org.example.usermanagementservice.config.JwtTokenUtil;
-import org.example.usermanagementservice.dto.GlobalAPIResponse;
-import org.example.usermanagementservice.entity.Role;
-import org.example.usermanagementservice.entity.User;
-import org.example.usermanagementservice.service.UserService;
+
+import com.example.usermgmntservice.config.JwtTokenUtilTest;
+import com.example.usermgmntservice.config.security.v2.JwtTokenUtil;
+import com.example.usermgmntservice.dto.GlobalAPIResponse;
+import com.example.usermgmntservice.dto.StudentRegisterDto;
+import com.example.usermgmntservice.dto.TeacherRegisterDto;
+import com.example.usermgmntservice.entity.User;
+import com.example.usermgmntservice.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
-import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -22,25 +24,20 @@ public class AuthController extends BaseController {
     @Autowired
     private UserService userService;
 
-    @Autowired
-    private PasswordEncoder passwordEncoder;
 
-    @PostMapping("/register")
-    public ResponseEntity<GlobalAPIResponse> register(@RequestParam String username, @RequestParam String password) {
-        // Check if user already exists
-        if (userService.findByUserName(username) != null) {
-            return ResponseEntity.ok(failureResponse("User already exist", username));
-        }
 
-        // Save the user with password (you should hash the password before saving it)
-        User user = new User();
-        user.setUsername(username);
-//      // Use a password encoder here for security  passwordEncoder.encode(password)
-        user.setPassword(password);
-        user.setRole(Role.USER);
-        userService.save(user);
+    // open api
+    @PostMapping("/register-student")
+    public ResponseEntity<GlobalAPIResponse> registerStudent(@RequestBody StudentRegisterDto studentRegisterDto) {
+        User user = userService.registerStudent(studentRegisterDto);
+        return ResponseEntity.ok(successResponse("User registered", user.getUsername()));
+    }
 
-        return ResponseEntity.ok(successResponse("User registered", username));
+    @PreAuthorize("hasRole('ADMIN')")
+    @PostMapping("/create-teacher")
+    public ResponseEntity<GlobalAPIResponse> createTeacher(@RequestBody TeacherRegisterDto teacherRegisterDto) {
+        User user = userService.createTeacher(teacherRegisterDto);
+        return ResponseEntity.ok(successResponse("Teacher created", user.getUsername()));
     }
 
     @PreAuthorize("hasRole('ADMIN')")
@@ -49,10 +46,9 @@ public class AuthController extends BaseController {
         return ResponseEntity.ok(successResponse("Users fetched successfully", userService.getAllUsers()));
     }
 
-    @PostMapping("/login")
+    @GetMapping("/login")
     public ResponseEntity<GlobalAPIResponse> login(@RequestParam String username, @RequestParam String password) {
         User user = userService.findByUserName(username);
-        //token can be saved to db or local memory to improve security
         // use password encoder later
         if (user != null && user.getPassword().equals(password)) {  // Simplified password check
             // Generate and return JWT token

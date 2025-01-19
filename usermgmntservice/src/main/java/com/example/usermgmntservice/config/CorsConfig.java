@@ -1,13 +1,11 @@
 package com.example.usermgmntservice.config;
 
-import com.memo.config.NoteWebFilter;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.cors.CorsConfiguration;
-import org.springframework.web.cors.reactive.CorsConfigurationSource;
-import org.springframework.web.cors.reactive.UrlBasedCorsConfigurationSource;
-import org.springframework.web.server.WebFilter;
+import org.springframework.web.cors.CorsConfigurationSource;
+import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
 
 @Configuration
 @Slf4j
@@ -27,10 +25,5 @@ public class CorsConfig {
         return source;
     }
 
-
-    @Bean
-    public WebFilter noteWebFilter() {
-        return new NoteWebFilter();
-    }
 
 }

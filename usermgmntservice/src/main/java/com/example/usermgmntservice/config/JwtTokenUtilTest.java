@@ -10,7 +10,7 @@ import io.jsonwebtoken.SignatureAlgorithm;
 import java.util.Date;
 import java.util.List;
 
-public class JwtTokenUtil {
+public class JwtTokenUtilTest {
 
     private static final String SECRET_KEY = "-j]#)z4.+A_xbKQQC@h2FxCGzattHr";
 

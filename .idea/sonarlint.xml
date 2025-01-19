@@ -4,6 +4,7 @@
     <option name="moduleMapping">
       <map>
         <entry key="schoolmanagement" value="treeleaftestbibash" />
+        <entry key="user-management-service" value="web-app-task" />
       </map>
     </option>
   </component>
